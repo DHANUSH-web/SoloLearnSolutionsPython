@@ -16,15 +16,8 @@ class Juice:
         self.name = name
         self.capacity = capacity
 
-    def __str__(self):
-        return f"{self.name} ({self.capacity}L)"
-
-    def __add__(self):
-        return f"{self.name} & {self.capacity}"
-
-
 x = Juice('Orange', 1.5)
 y = Juice('Apple', 2.0)
 
 result = x.capacity + y.capacity
-print(x.name + "&" + y.name + " ("+str(result)+"L)")
+print(f"{x.name}&{y.name} ({result}L)")

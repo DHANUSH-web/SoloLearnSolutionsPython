@@ -15,4 +15,4 @@ def celToFar(celsius):
     return (9/5) * celsius + 32
 
 celsius = int(input())
-print(celToFar(celsius))
+print("%0.2f" % celToFar(celsius))
